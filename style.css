@@ -1,23 +1,33 @@
 body{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     background-image:url(./bg2.jpg);
 background-attachment: fixed;
-background-size: cover;
+background-size: contain;
+font-family: Arial, sans-serif;
 }
 #logo{
     width: 150px;
+    max-width: 100%;
+    display: block;
+    
 
 }
 
 .container {
     color: aliceblue;
     text-align: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     margin-left: 200px;
     margin-top: 50px;
     font-size: 20px;
+
+li:hover{
+    background-color: orange;
+    color: black;
+}
+
 }
 .listnone li{
     list-style: none;
@@ -38,4 +48,8 @@ a{
     border: 1px solid orange;
     padding: 10px;
 
+}
+a:hover {
+    background-color: orange;
+    color: black;
 }
