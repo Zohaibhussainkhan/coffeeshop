@@ -1,4 +1,4 @@
-body{
+* body{
     margin: 0;
     padding: 0;
     background-image:url(./bg2.jpg);
@@ -6,26 +6,41 @@ background-attachment: fixed;
 background-size: contain;
 font-family: Arial, sans-serif;
 }
+
 #logo{
-    width: 150px;
-    max-width: 100%;
-    display: block;
-    
+    height: 200px;
+  display: flex;
+  justify-content: center;
+ 
 
 }
 
+#name{
+background-color: orange;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+font-size: 30px;
+padding: 5px;
+border-radius: 50px;
+ 
+
+
+}
+
+
 .container {
     color: aliceblue;
-    text-align: center;
-    position: fixed;
+    text-align:center;
     top: 0;
-    margin-left: 200px;
-    margin-top: 50px;
-    font-size: 20px;
+    font-size: 25px;
+     
+    
+ 
 
 li:hover{
     background-color: orange;
     color: black;
+    cursor: pointer;
 }
 
 }
@@ -34,6 +49,7 @@ li:hover{
     display: inline;
     padding: 10px;
     
+
 }
 
 #familydeals{
@@ -41,6 +57,7 @@ li:hover{
     color: aliceblue;
     text-align: center;
     margin-top: 100px;
+    cursor: pointer;
 }
 a{
     color: aliceblue;
@@ -52,4 +69,150 @@ a{
 a:hover {
     background-color: orange;
     color: black;
+}
+
+#order{
+    height: 60px;
+    width: 50ox;
+    border-radius: 100px;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+
+}
+
+#types{
+height: 200px;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+margin-bottom: 20px;
+background-color: aliceblue;
+
+
+}
+
+#types:hover {
+    background-color: orange;
+    color: black;
+
+}
+.types2{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+
+
+}
+
+.fit{
+height: 400px;
+border: 1px solid white;
+border-radius:20px;
+  float: left;
+  width: 370px;
+  padding: 1px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+#footer {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* mobile*/
+@media (max-width: 480px) {
+
+    #logo img {
+        width: 140px;
+    }
+
+    #name {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .listnone li {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    select {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #familydeals h1 {
+        font-size: 22px;
+    }
+
+    #types {
+        height: auto;
+    }
+
+    .fit {
+        width: 90%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    #familydeals a {
+        display: block;
+        margin: 10px auto;
+        width: 60%;
+    }
+}
+
+
+/* tablet*/
+@media (max-width: 768px) and (min-width: 481px) {
+
+    #logo img {
+        width: 180px;
+    }
+
+    #name {
+        font-size: 24px;
+    }
+
+    .listnone li {
+        display: inline-block;
+        margin: 8px;
+        font-size: 20px;
+    }
+
+    .fit {
+        width: 45%;
+        height: auto;
+        margin-left: 0px;
+    }
+}
+
+
+/* LAPTOP*/
+
+@media (max-width: 1200px) and (min-width: 769px) {
+
+    #name {
+        font-size: 28px;
+    }
+
+    .listnone li {
+        font-size: 22px;
+        padding: 6px;
+    }
+
+    .fit {
+        width: 30%;
+        height: auto;
+    }
 }
